@@ -10,7 +10,7 @@ RUN		apt-get update -qq && apt-get install -qqy \
   make \
   build-essential
 
-RUN		git clone https://github.com/wolf9466/cpuminer-multi
+RUN		git clone https://github.com/MoneroDark/cpuminer-multi
 
 RUN		cd cpuminer-multi && ./autogen.sh && ./configure CFLAGS="-O3" && make
 
